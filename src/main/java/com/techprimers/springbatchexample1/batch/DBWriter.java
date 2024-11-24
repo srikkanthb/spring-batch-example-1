@@ -16,7 +16,12 @@ public class DBWriter implements ItemWriter<User> {
     @Autowired
     public DBWriter (UserRepository userRepository) {
         this.userRepository = userRepository;
+
+        
     }
+
+
+
 
     @Override
     public void write(List<? extends User> users) throws Exception{
